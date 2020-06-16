@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <title>Food Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="assets/logo.png" alt=""></div>
+                <ul>
+                    <li>
+                        <a href="#slider">Início</a>
+                    </li>
+                    <li>
+                        <a href="#cardapio">Cardápio</a>
+                    </li>
+                    <li>
+                        <a href="#events">Quem Somos</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </header>
+            <div id="slider">
+                <div class="intro selected">
+                    <img src="assets/skewer.jpg" alt="skewer">
+                    <h2>Aberto a Qualquer hora do dia</h2>
+                    <div class="circle left" id="prev" onclick="prevSlide()">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="circle right" id="next" onclick="nextSlide()">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+
+                </div>
+                <div class="intro ">
+                    <img src="assets/burger.jpg" alt="Image of burger">
+                    <h2>Sanduíches com um sabor sem igual</h2>
+                    <div class="circle left" id="prev" onclick="prevSlide()">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="circle right" id="next" onclick="nextSlide()">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+
+                </div>
+
+                <div class="intro ">
+                    <img src="assets/beer.jpg" alt=" beer">
+                    <h2>Cerveja boa e de qualidade</h2>
+                    <div class="circle left" id="prev" onclick="prevSlide()">
+                        <i class="fa fa-chevron-left"></i>
+                    </div>
+                    <div class="circle right" id="next" onclick="nextSlide()">
+                        <i class="fa fa-chevron-right"></i>
+                    </div>
+
+                </div>
+            </div>
+            <!--slider-->
+
+            <section id="cardapio">
+
+                <!--<nav id="cardapio-menu"> <ul> <li><a href="#" id="selected">Espetos</a></li> <li onclick="goTabuas()"><a>Tábuas</a></li> <li> <a>Hambúrgueres</a></li> <li><a href="#">Bebidas</a></li> <li><a href="#">Especial</a></li> </ul> </nav>-->
+
+                <h1>Cardápio</h1>
+
+                <hr>
+
+                <div class="item selected">
+                    <div class="hr-title">
+                        <h2 id="hr-title">Espetos</h2>
+                    </div>
+                    <div class="fire-bg">
+                        <div class="espetos">
+
+                            <img src="assets/barbecue2.png" alt="espeto">
+
+                            <ul>
+                                <li>Boi</li>
+                                <li>Porco</li>
+                                <li>Coração</li>
+                                <li>Tulipa</li>
+                                <li>Linguiça</li>
+                            </ul>
+                            <ul>
+                                <li>Queijo Trança</li>
+                                <li>Medalhão de Queijo</li>
+                                <li>Medalhão de Frango</li>
+                                <li>Kafta</li>
+                                <li>Pão de Alho</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <!--fire-bg-->
+                    <div class="center">
+                        <a class="icone" onclick="prevItem()">&#10094;</a>
+
+                        <a class="icone" onclick="nextItem()">&#10095;</a>
+                    </div>
+
+                    <hr>
+
+                </div>
+                <!--item-->
+                <div class="item">
+                    <div class="hr-title">
+                        <h2 id="hr-title">Tábuas</h2>
+                    </div>
+                    <div class="fire-bg">
+                        <div class="espetos">
+                            <img src="assets/fries.png" alt="espeto">
+
+                            <ul>
+                                <li>Queijo</li>
+                                <li>Fritas</li>
+                                <li>Azeitona</li>
+                                <li>Palmito</li>
+                                <li>Calabresa</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!--fire-bg-->
+                    <div class="center">
+                        <a class="icone" onclick="prevItem()">&#10094;</a>
+                        <a class="icone" onclick="nextItem()">&#10095;</a>
+                    </div>
+
+                    <hr>
+                </div>
+                <!--item-->
+                <div class="item">
+                    <div class="hr-title">
+                        <h2 id="hr-title">Hambúrgueres</h2>
+                    </div>
+                    <div class="fire-bg">
+                        <div class="espetos">
+                            <img src="assets/png-burger.png" alt="espeto">
+
+                            <ul>
+                                <li>Misto Quente</li>
+                                <li>Hamburguer</li>
+                                <li>X-Egg</li>
+                                <li>X-Egg-Bacon</li>
+                                <li>X-Tudo</li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+                    <!--fire-bg-->
+                    <div class="center">
+                        <a class="icone" onclick="prevItem()">&#10094;</a>
+                        <a class="icone" onclick="nextItem()">&#10095;</a>
+                    </div>
+
+                    <hr>
+                </div>
+                <!--item-->
+
+            </section>
+
+            <section id="events">
+
+                <h1>Música ao vivo toda sexta e sábado</h1>
+            </section>
+
+            <section id="sobre">
+
+                <div class="about-box">
+
+                    <h1>Entrega em toda a região</h1>
+
+                    <button>Consultar taxa</button>
+
+                </div>
+
+            </section>
+
+            <section id="contact">
+
+                <h1>Para mais informações, entre em contato</h1>
+
+                <h2>(31) 9 9999-9999</h2>
+            </section>
+
+            <footer >
+
+                <div class="footer-menu">
+                    <h2>Menu</h2>
+                    <ul>
+                        <li>
+                            <a href="#slider">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="#cardapio">Cardápio</a>
+                        </li>
+                        <li>
+                            <a href="#">Sobre a Empresa</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+                <h2>Follow us</h2>
+
+                <div class="flex-items">
+                    <div class="circle social">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="circle social">
+                        <i class="fa fa-instagram"></i>
+                    </div>
+
+                </div>
+                <!--footer-menu-->
+                <hr id="hr-footer">
+
+                <p>&copy 2020. Todos os direitos reservados.</p>
+
+            </footer>
+
+            <a href="https://api.whatsapp.com/send?phone=5531991800592&text=Olá!%20Faça%20seu%20pedido,%20iremos%20te%20atender%20o%20mais%20breve%20possível." class="float" target="_blank">
+                <i class="fa fa-whatsapp my-float"></i>
+            </a>
+
+            <script src="main.js"></script>
+        </div>
+        <!--container-->
+    </body>
+</html>

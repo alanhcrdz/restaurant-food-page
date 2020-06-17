@@ -73,6 +73,9 @@
             padding: 10px;  
             border-right: 1px solid var(--secondary-color);
         }
+        .footer-menu ul {
+            width: 100%;
+        }
         
         
 
@@ -86,8 +89,8 @@
         }
 
         .logo {
-            width: 300px;
-            margin-left: 80px;
+            width: 100%;
+            margin-left: 40px;
 
         }
         .logo img {
@@ -95,6 +98,18 @@
             display: block;
             margin: auto;
         }
+        header ul {
+            width: 100%;
+            padding: 10px;
+        }
+        header ul li {
+            text-align: center;
+            margin: auto;
+            padding: 5px;
+
+
+        }
+        
         
         .intro img {
             margin: 0 auto;
@@ -141,7 +156,7 @@
         }
         
         .footer-menu ul{
-            width: 15%;
+            width: 100%;
         }
 
         .social {
@@ -155,11 +170,11 @@
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 598px) {
 
   
     .container {
-        max-width: 768px;
+        max-width: 598px;
         width: 100%;
 
 
@@ -167,12 +182,20 @@
 
         .logo {
             width: 300px;
-            margin-left: 0;
+            margin-left: 20px;
 
 
         }
         header ul  {
+           padding: 0;
             width: 100%;
+            margin-right: 0;
+            
+
+        }
+
+        header ul li a  {
+            font-size: 13px;
 
         }
         header .logo img {
@@ -191,7 +214,7 @@
             width: 100%;
             text-align: center;
             color: var(--white);
-            font-size: 32px;
+            font-size: 35px;
         }
 
         .circle {
@@ -206,14 +229,19 @@
 
         .left {
             position: absolute;
-            top: 46.5%;
-            left: 2%;
+            top: 60%;
+            left: 40%;
+            width: 40px;
+            height: 40px;
+            
         }
         
         .right {
             position: absolute;
-            top: 46.5%;
-            right: 2%;
+            top: 60%;
+            right: 40%;
+            width: 40px;
+            height: 40px;
         }
                
         
@@ -222,11 +250,30 @@
             width: 150px;
         
         }
-        
+        #events {
+            height: 300px;
+        }
+        #events h1 {
+            font-size: 25px;
+            width: 100%;
+        }
+        #sobre {
+            height: 300px;
+        }
         
         .about-box {
-            width: 100%;
+            width: 80%;
          }
+
+         .about-box h1 {
+            width: 100%;
+            font-size: 25px;
+         }
+         #contact h1,#contact h2 {
+             font-size: 25px;
+             width: 100%;
+         }
+       
          .social {
              width: 32px;
              height: 32px;
@@ -243,6 +290,9 @@
             text-align: center;
             justify-content: center;
             align-items: center;
+        }
+        .footer-menu ul {
+            width: 100%;
         }
         
 .my-float {
@@ -401,7 +451,7 @@
             
             
             .footer-menu ul{
-                width: 30%;
+                width: 100%;
             }
 
             .footer-menu ul li a{
@@ -438,6 +488,7 @@
 
             .footer-menu ul{
                 width: 100%;
+                
             }
             #contact h1 {
                 font-size: 15px;
